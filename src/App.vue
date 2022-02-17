@@ -9,7 +9,7 @@ function userClick(event: MouseEvent) {
 }
 
 function userInput(input: string, event: Event) {
-  const target = event.target;
+  const target = event.target as HTMLInputElement;
   target.value = 'Bonjour';
   console.log(input);
 }
