@@ -1,6 +1,6 @@
 <template>
-  <h1 @click="userClick()">Bonjour tout le monde !</h1>
-  <input type="text" @input="userInput()" />
+  <h1 @click="userClick">Bonjour tout le monde !</h1>
+  <input type="text" @input="userInput" />
 </template>
 
 <script setup lang="ts">
