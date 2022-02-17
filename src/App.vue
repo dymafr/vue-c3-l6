@@ -1,21 +1,18 @@
-<template></template>
+<template>
+  <h1 @click="userClick()">Bonjour tout le monde !</h1>
+  <input type="text" @input="userInput()" />
+</template>
 
 <script setup lang="ts">
-interface User {
-  name: string;
-  age: number | string;
+function userClick(event: MouseEvent) {
+  console.log(event);
 }
 
-let user: User | null;
-
-function createUser(name: string): User | null {
-  return {
-    name,
-    age: 18,
-  };
+function userInput(input: string, event: Event) {
+  const target = event.target;
+  target.value = 'Bonjour';
+  console.log(input);
 }
-
-user = createUser('Paul');
 </script>
 
 <style></style>
