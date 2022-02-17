@@ -11,7 +11,7 @@ function userClick(event: MouseEvent) {
 function userInput(event: Event) {
   const target = event.target as HTMLInputElement;
   target.value = 'Bonjour';
-  console.log(input);
+  console.log(event);
 }
 </script>
 
